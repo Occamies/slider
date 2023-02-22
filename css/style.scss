@@ -5,10 +5,85 @@ $sunset: #e6c586ff;
 $slate-gray: #64767dff;
 $powder-blue: #a8bdcbff;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   background-image: url(../assets/savanne.jpg);
   background-size: cover;
   filter: blur();
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  backdrop-filter: blur(3px);
 }
 
+#slider {
+  width: 75vw;
+  height: 75vh;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: 50%;
+  background-size: cover;
+  border-radius: 100%;
+  display: grid;
+  grid-template-rows: 75% 25%;
+  gap: 20px ;
+
+#sliderContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#sliderText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  #sliderHeader {
+    height: 20%;
+    width: 25vw;
+    background-color: red;
+  }
+  
+  #sliderFillText {
+    height: 70%;
+    width: 25vw;
+    background-color: green;
+  }
+  
+}
+
+
+  #sliderImg {
+
+    height: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 50px #000000;
+  }
+
+  
+  
+  #imgMenu {
+    display: flex;
+    justify-content: space-around;
+
+    .imgMenuItem {
+      height: 100%;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-shadow: 0 0 10px #000000;
+    }
+  }
+}

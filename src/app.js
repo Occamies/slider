@@ -1,4 +1,4 @@
-import Initialize from "./Initialize";
+import Slider from "./Slider";
 import "../css/style.scss";
 
 // **  IIFE: Immediately Invoked Function Expression  */
@@ -6,6 +6,6 @@ import "../css/style.scss";
 (function () {
 
 
-  let init = new Initialize();
+  new Slider
 
 })();
