@@ -1,9 +1,9 @@
 /* SCSS HEX */
 $lion: #b69357ff;
-$ecru: #ceab68ff;
+/* $ecru: #ceab68ff;
 $sunset: #e6c586ff;
 $slate-gray: #64767dff;
-$powder-blue: #a8bdcbff;
+$powder-blue: #a8bdcbff; */
 
 * {
   margin: 0;
@@ -14,12 +14,12 @@ $powder-blue: #a8bdcbff;
 body {
   background-image: url(../assets/savanne.jpg);
   background-size: cover;
-  filter: blur();
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   backdrop-filter: blur(3px);
+  overflow: hidden;
 }
 
 #slider {
@@ -43,17 +43,30 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: #b69357ff;
+  padding: 10px;
+  border-radius: 5px;
+  
+
+  
+  h1 {
+    text-align: center;
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
 
   #sliderHeader {
     height: 20%;
     width: 25vw;
-    background-color: red;
+
   }
   
   #sliderFillText {
     height: 70%;
     width: 25vw;
-    background-color: green;
   }
   
 }
